@@ -105,9 +105,6 @@ input:focus{
 }
 
 @media (max-width:720px){
-    body{
-        
-    }
     .container{
         width: 300px;
     }
