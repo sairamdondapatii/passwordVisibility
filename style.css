@@ -4,13 +4,7 @@
     outline: none;
     
 }
-body{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    background-color: rgb(240, 239, 239);
-}
+
 form{
     padding: 30px 40px;
 }
@@ -20,6 +14,8 @@ form{
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0px 5px 8px rgb(153, 150, 150);
+    margin: auto auto;
+    margin-top: 100px;
 }
 .content{
     margin-bottom: 20px;
@@ -99,10 +95,16 @@ input:focus{
     color: #e74c3c;;
 }
 
+.bottom{
+    text-align: center;
+    margin-top: 80px;
+    color: grey;
+}
+.bottom>p>a{
+    color: grey;
+}
+
 @media (max-width:720px){
-    body{
-        
-    }
     .container{
         width: 300px;
     }
