@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(240, 239, 239);
+}
+form{
+    padding: 30px 40px;
+}
+.container{
+    background-color: white;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 5px 8px rgb(153, 150, 150);
+}
+.content{
+    margin-bottom: 20px;
+    position: relative;
+}
+.container>h1{
+    padding: 0px 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+.login{
+    margin-top: 10px;
+    text-align: center;
+}
+.content>label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.content>input{
+    display: block;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(201, 197, 197);
+    font-size: 19px;
+    padding: 5px 0px;
+    padding-left: 5px;
+    width: 100%;
+}
+.content>span{
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    visibility: hidden;
+    font-size: 20px;
+}
+.btn{
+    margin-top: 30px;
+}
+.btn>input{
+    width: 100%;
+    padding: 10px;
+    background-color:#2ecc71;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input:focus{
+    border-color: dodgerblue;
+}
+.content.sucess span.sucess{
+    visibility: visible;
+    color: #2ecc71;
+}
+.content.error span.error{
+    visibility: visible;
+    color: #e74c3c;
+}
+.content.sucess input{
+    border-color: #2ecc71;
+}
+.content.error input{
+    border-color: #e74c3c;
+}
+.content>small{
+    position: absolute;
+    visibility: hidden;
+}
+.content.error small.error{
+    visibility: visible;
+    color: #e74c3c;;
+}
+
+@media (max-width:720px){
+    body{
+        
+    }
+    .container{
+        width: 300px;
+    }
+}
